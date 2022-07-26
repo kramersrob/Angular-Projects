@@ -1,0 +1,39 @@
+.button-states {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.hover {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 1px;
+    transition: all .1s linear;
+}
+
+.hover:hover {
+    box-shadow: 0 5px 4px 0 rgb(0 0 0 / 15%);
+}
+
+.active {
+    border-radius: 1px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 10%);
+    transition: all .1s linear;
+    border: none;
+    background: var(--white);
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+
+.active.active {
+    background: var(--light-grey);
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 20%);
+}
